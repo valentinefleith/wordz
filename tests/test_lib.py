@@ -1,8 +1,8 @@
-import wordz
+from wordz.libwordz import compte_mots
 
 
 def test_compte_mots():
-    word_count = wordz.compte_mots(
+    word_count = compte_mots(
         [
             "Je vous accorde qu'elle n'est pas étourdissante; mais je vous assure qu'elle est agréable quand on cause seul avec elle."
         ]

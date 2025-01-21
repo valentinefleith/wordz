@@ -12,3 +12,8 @@ Run smoke test
 ```bash
 bash test.sh
 ```
+
+Run unit tests
+```bash
+pytest tests/test_wordz.py
+```
