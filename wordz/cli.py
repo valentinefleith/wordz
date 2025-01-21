@@ -1,5 +1,5 @@
 import click
-from libwordz import compte_mots
+from wordz.libwordz import compte_mots
 
 
 @click.command()
