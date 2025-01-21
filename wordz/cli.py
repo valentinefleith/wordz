@@ -5,7 +5,9 @@ from wordz.libwordz import compte_mots
 @click.command()
 @click.argument("inpt")
 @click.argument("word", required=False)
-def main(inpt: str, word: str | None):
+@click.option(
+    "-n", type=int, default=16)
+def main(inpt: str, word: str | None, n: int):
 
     with open(inpt) as in_stream:
         count = compte_mots(in_stream)
@@ -13,7 +15,7 @@ def main(inpt: str, word: str | None):
     if word is not None:
         print(f"{word}: {count[word]}")
     else:
-        for w, count in count.most_common(16):
+        for w, count in count.most_common(n):
             print(f"{w}: {count}")
 
 
