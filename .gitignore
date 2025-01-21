@@ -1,2 +1,5 @@
 local
 __pycache__
+build
+pyproject.toml
+*.egg-info
